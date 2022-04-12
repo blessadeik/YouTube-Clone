@@ -1,0 +1,85 @@
+/* CSS for YouTube project */
+.video-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+
+@media (max-width: 867px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 868px) and (max-width:1059px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 1060px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.video-preview{
+    box-sizing: border-box;
+    border: none;   
+    cursor: pointer;
+    transition: transform 1s, 
+                box-shadow 1s;
+}
+
+.video-preview:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transform: scale(1.01)
+}
+.video-preview a{
+    text-decoration: none;
+    color: #000000;;
+}
+.imagepreview{
+    position:relative;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.timestamp{
+    position: absolute;
+    background-color: #000000;
+    color:#ffffff;
+    padding:3px;
+    border-radius:5px;
+    font-weight: 500;
+    bottom: 10px;
+    right: 10px;
+}
+.thumbnail{
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+}
+.video-description{
+    display:grid;
+    grid-template-columns: 50px 1fr;
+}
+/* .img-thumb{
+} */
+.profile-picture{
+    width: 40px;
+    border-radius: 50px;
+}
+/* .video-content{
+} */
+.video-title{
+    font-weight: 500;
+    font-size:16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.video-stats,
+.video-author{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(115, 115, 115);
+    display: block;
+    margin-bottom:4px;}

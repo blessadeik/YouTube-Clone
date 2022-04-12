@@ -1,0 +1,19 @@
+/* CSS for YouTube clone: General */
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    margin:0;
+    padding-right: 30px;
+    padding-top: 105px;
+    padding-bottom: 520px;
+    padding-left: 120px;
+    background-color: #f9f9f9;
+}
